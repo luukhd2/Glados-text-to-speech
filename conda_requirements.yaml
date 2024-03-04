@@ -1,0 +1,24 @@
+name: glados_tts_env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - ffmpeg  # Installed via conda to ensure compatibility with conda-forge and pytorch binaries
+  - pytorch
+  - torchvision
+  - torchaudio
+  - scipy
+  - unidecode
+  - inflect
+  
+  - pip:
+      - requests
+      - charset_normalizer
+      - chardet
+      - soundfile
+      - pydub
+      - ffmpeg-python
+      - "transformers==4.*"  # Specify the major version if you want to ensure compatibility and stability
+      - deep-phonemizer  # Assuming this is the correct package for dp.phonemizer
