@@ -1,3 +1,8 @@
+# manually defined
+/glados_tts_env
+/glados_tts_env/
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
