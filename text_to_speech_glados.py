@@ -11,11 +11,25 @@ from trimmed_requirements import get_all, prepare_text
 
 
 def run_tts(model_dir, text, output_path, device, alpha: float = 1.0):
+    """
+    Generate speech from text using the GLaDOS model.
+
+    Args:
+    model_dir: pathlib.Path, path to the directory containing the models.
+               by default, the models are expected to be in the './models' directory.
+    text: str, the text to be converted to speech.
+    output_path: pathlib.Path, path to save the generated speech. I recommend using the .wav format.
+    device: str, the device to run the model on. Use 'cpu' for CPU and 'cuda' for GPU.
+    alpha: float, the alpha value to use for controlling the speed of speech. Default is 1.0.
+
+    Returns:
+    None
+    """
     try:
         emb, glados, vocoder, device = get_all(model_dir=model_dir, device=device)
     except FileNotFoundError as e:
-        print(e)
-        print("Please download the models from the release page.")
+        print("Check model directory", model_dir)
+        print("They should download automatically with git lfs.")
         raise e
 
     x = prepare_text(text, model_dir=model_dir)
