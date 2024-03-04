@@ -1,6 +1,8 @@
 # Glados-text-to-speech
  TTS using the Glados voice from Portal 1. 
  This is a trimmed down version of https://github.com/keithito/tacotron
+ Thanks to them for their code and training the models.
+ I made them more easily accessible through this repo.
  
 ![alt text](https://github.com/luukhd2/Glados-text-to-speech/blob/main/im.png?raw=true)
 
