@@ -1,7 +1,9 @@
 # Glados-text-to-speech
  TTS using the Glados voice from Portal 1. 
  This is a trimmed down version of https://github.com/keithito/tacotron
-![alt text](https://github.com/luukhd2/Glados-text-to-speech/blob/main/image.jpg?raw=true)
+ 
+![alt text](https://github.com/luukhd2/Glados-text-to-speech/blob/main/im.png?raw=true)
+
 # Setup:
 1. Clone this repository and cd into the directory.
 2. Create and activate the conda environment with:
